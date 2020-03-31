@@ -1,0 +1,225 @@
+/* === Woo Styles === */
+
+.woocommerce-product-gallery__image {
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.voucher-fields label {
+  margin-right: 15px;
+}
+
+.product textarea {
+  width: 100%;
+}
+
+.product-addon-gift .addon-description {
+  float: left;
+
+  & + p {
+    float: left;
+    display: inline-block;
+  }
+}
+
+div.addon-description p {
+  font-style: normal;
+}
+
+.product-addon-gift-address,
+.product-addon-gift-message,
+.product-addon-gift-message h3,
+.product-addon-gift h3 {
+  display: none;
+}
+
+.product-addon-gift {
+  margin-bottom: 0 !important;
+}
+
+.product-addon-gift-message,
+.product-addon-gift-address {
+  margin-top: 0 !important;
+
+  p {
+    padding-top: 0;
+  }
+}
+
+.variations {
+  td {
+    padding: 20px 20px 20px 0;
+  }
+}
+
+.variation {
+  font-size: 0.9rem;
+
+  dt,
+  dd {
+    display: block;
+    width: 100%;
+  }
+
+  dt {
+    margin-top: 20px;
+  }
+
+  dd {
+    font-size: 1rem;
+    font-weight: 700;
+
+    p {
+      padding-bottom: 0;
+    }
+  }
+}
+
+.wc-booking-summary {
+  margin: 0;
+  border: 0;
+  padding: 1em 0;
+  color: inherit;
+  border-radius: 0;
+
+  ul {
+    list-style: none !important;
+  }
+}
+
+.woocommerce .woocommerce-customer-details address {
+  border: none;
+  padding: 10px 0;
+  border-radius: 0;
+}
+
+.chars_remaining {
+  font-size: 0.8rem;
+}
+
+.reset_variations {
+  display: none;
+}
+
+.woocommerce-message {
+  border: none !important;
+}
+
+section .woocommerce,
+section .comment-form,
+.product {
+  h3 {
+    font-size: 1.8rem;
+  }
+
+  .product {
+    img {
+      width: 100%;
+    }
+  }
+
+  #respond input#submit.alt,
+  a.button.alt,
+  button.button.alt,
+  input.button.alt {
+    background-color: $primary !important;
+    color: white !important;
+  }
+
+  input,
+  input.input-text,
+  select,
+  textarea {
+    background-color: #efefef;
+    border: none;
+    font-family: $font-family-sans-serif;
+    font-size: 1rem;
+    padding: 15px 25px;
+  }
+
+  input.input-text {
+    //font-size:.8rem;
+    padding: 10px 15px;
+  }
+
+  .col-1 {
+    width: 100% !important;
+    padding: 0;
+  }
+
+  .col-2 {
+    //display:none;
+  }
+
+  .col2-set .col-2 {
+    width: 100%;
+  }
+
+  .woocommerce-checkout #stripe-payment-data input.input-text {
+    font-size: 1rem !important;
+  }
+
+  .product-addon {
+    p {
+      margin-bottom: 0;
+      padding: 5px 0;
+    }
+  }
+
+  .addon-name {
+    display: none;
+  }
+
+  #product-addons-total {
+    display: none;
+  }
+
+  .variation-PrintedGiftCardspanclasswoocommerce-Price-amountamountspanclasswoocommerce-Price-currencySymbolpoundspan500span {
+    display: none;
+  }
+}
+
+img.size-shop_single {
+  width: 100%;
+  height: auto;
+}
+
+div.product::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+div.product .images {
+  width: 100%;
+
+  @include media-breakpoint-up(md) {
+    width: 35%;
+    float: left;
+  }
+}
+
+div.product .summary {
+  width: 100%;
+
+  @include media-breakpoint-up(md) {
+    width: calc(65% - 40px);
+    padding-left: 50px;
+    box-sizing: border-box;
+    float: left;
+    clear: none;
+  }
+
+  h1 {
+    @include media-breakpoint-up(md) {
+      padding: 0;
+    }
+  }
+
+  .price {
+    padding-top: 0;
+    color: $primary;
+  }
+}

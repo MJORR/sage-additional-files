@@ -1,0 +1,54 @@
+/* ===== Hero ==== */
+
+.pl-hero-container {
+  position: relative;
+  top: 0;
+  left: 0;
+  min-height: 500px;
+
+  .texture {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url("../images/texture.jpg");
+    z-index: -3;
+    height: 500px;
+  }
+
+  .gradient {
+    position: absolute;
+    top: 0;
+    left: 0;
+    //background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.7) 50%, rgba(255, 255, 255, 0) 100%);
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 30%, rgba(255, 255, 255, 1) 60%, rgba(255, 255, 255, 0) 100%);
+    z-index: -2;
+  }
+
+  .mask {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-image: url("../images/curve.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    //transform: rotate(180deg);    // flip it if used in footer.
+    height: 100%;
+    z-index: -1;
+  }
+
+  .pl-hero {
+    //position: absolute;
+    //top: 0;
+    //left: 0;
+    //background-image: url("../images/masthead.png");
+    //background-color: $primary;
+    //background-size: cover;
+    //background-repeat: no-repeat;
+    //background-position: center center;
+    //height: 80vh;
+    //z-index: 4;
+    padding-top: 120px;  // allow space for navB
+  }
+}
+

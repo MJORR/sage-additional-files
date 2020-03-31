@@ -1,0 +1,53 @@
+.acf-button-group-custom-color label {
+  padding: 0 !important;
+}
+
+.acf-button-group-custom-color label div {
+  height: 35px;
+  width: 40px;
+  position: relative;
+}
+
+.acf-button-group-custom-color label div::after {
+  position: absolute;
+  top: -2px;
+  left: 3px;
+  font-family: "dashicons";
+  content: "\f147";
+  display: inline-block;
+  -webkit-font-smoothing: antialiased;
+  font-size: 31px;
+  vertical-align: top;
+  margin-right: 5px;
+  margin-right: 0.5rem;
+  transition: all 0.2s ease;
+  opacity: 0;
+}
+
+.acf-button-group-custom-color label:hover div::after {
+  color: #2b9af3;
+  opacity: 0.3;
+}
+
+.acf-button-group-custom-color.tick-white label:hover div::after {
+  color: white;
+  opacity: 0.3;
+}
+
+.acf-button-group-custom-color label.selected div::after {
+  color: #2b9af3;
+  opacity: 1;
+}
+
+.acf-button-group-custom-color.tick-white label.selected div::after {
+  color: white;
+  opacity: 1;
+}
+
+.acf-carousel-buttons .acf-label {
+  display: none;
+}
+
+.acf-carousel-buttons .acf-fields.-border {
+  border: 0;
+}
